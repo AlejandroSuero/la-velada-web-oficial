@@ -21,14 +21,3 @@ const url = `https://cdn.lavelada.dev/${id}-corto.mp4`
 		<source type="video/mp4" src={url} />
 	</video>
 </div>
-
-<script>
-	import { $ } from "@/lib/dom-selector"
-
-	const playVideo = () => {
-		const $bgVideoDiv = $("#bg-video")
-		if ($bgVideoDiv) $bgVideoDiv.querySelector("video")?.play()
-	}
-
-	document.addEventListener("astro:page-load", playVideo)
-</script>
